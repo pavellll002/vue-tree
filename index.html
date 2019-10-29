@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Приложение покупок</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    	@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+    	input{
+    		font-family: 'Raleway', sans-serif;
+    		border: 2px solid rgba(78,177,186,.5);
+    		border-radius: .2em;
+    		font-size: .7em; 
+    		color:#222930;
+    	}
+    	p{
+    		margin: 0;
+    	}
+    	li{
+    		list-style-type: none;
+    	}
+    	#result{
+    		color:#222930;
+    		font-family: 'Raleway', sans-serif;
+    	}
+    	ul li,.block {
+    		display: flex;
+    	}
+    	.note{
+    		color:#4EB1BA;
+    		background-color: #222930;
+    		border: 2px solid #E9E9E9;
+    		border-radius:.2em;
+    		padding: .3em .5em;
+    		font-family: 'Raleway', sans-serif;
+    		max-width: fit-content;
+    		cursor:pointer;
+    	}
+    	.plus,.minus{
+    		color:#4EB1BA;
+    		margin-left: .5em;
+    		font-size: large;
+    		cursor:pointer;
+    	}
+    	.modalInput{
+    		margin-left: .2em;
+    	}
+    </style>
+</head>
+<body>
+	<div id="app">
+		<tree :phones="phones"></tree>
+	</div>
+	<script src="https://unpkg.com/vue"></script>
+    <script type="text/javascript" src="task.js"></script>
+</body>
+</html>
